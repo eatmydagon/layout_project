@@ -1,0 +1,232 @@
+/*
+  If you get stuck, feel free to watch the follow-up videos where I'll show you one solution
+*/
+
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+}
+
+h2,
+h3,
+a {
+	color: #093a58;
+}
+
+h2,
+h3 {
+	margin-top: 0;
+}
+
+h1 {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.25em;
+}
+
+.name a,
+.main-nav a {
+	display: block;
+	text-align: center;
+	padding: 5px;
+}
+
+	.main-nav a {
+	font-size: .95em;
+	color: #3acec2;
+	text-transform: uppercase;
+}
+
+.main-footer span {
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.main-nav a:hover {
+	color: #093a58;
+}
+
+/* ---- Header ---- */
+
+.main-header {
+	padding-top: 20px;
+}
+
+
+
+/* ---- Layout Containers ---- */
+
+.banner {
+	color: #fff;
+	background: #3acec2;
+	padding: 30px 0;
+	text-align: center;
+	margin: 15px 0;
+}
+
+.main-footer {
+	background: #d9e4ea;
+	padding: 2em 0;
+	margin-top: 30px;
+}
+
+.container_w {
+		width: 95%;
+		margin: 0 auto;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
+}
+
+figure {
+	margin: 0;
+	width: 100%;
+	height: 300px;
+	text-align: center;
+	position: relative;
+}
+
+.feat-img {
+	display: inline-block;
+	height: 95%;
+	padding: 10px;
+	border: 2px solid grey;
+}
+
+.location {
+	width: 25px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+figcaption {
+	background: rgba(0,0,0, 0.3);
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	;
+}
+
+
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media (min-width: 769px),
+only screen (min-width: 600px) and (orientation: landscape) {
+
+	.container_w {
+			width: 80%;
+	}
+
+	.main-header {
+		  position: fixed;
+			top: 0;
+			z-index: 1000;
+			background: white;
+			width: 100%;
+	}
+
+	.name {
+			float: left;
+	}
+
+	.main-nav {
+			float: right;
+	}
+
+	.main-nav li {
+			display: inline-block;
+	}
+
+	.col {
+			float: left;
+	}
+
+	.secondary,
+	.primary {
+			width: 50%;
+			padding: 10px;
+	}
+
+	figure {
+		height: inherit;
+	}
+
+	.banner {
+		 padding-top: 72px;
+	}
+
+
+
+@media (min-width: 1200px) {
+
+	.secondary,
+	.tertiary {
+			width: 30%;
+			padding: 10px;
+	}
+
+	.primary {
+			width: 40%;
+	}
+
+	.container_w {
+			max-width: 1100px;
+	}
+
+
+
+
+
+
+}
+
+
+
+
+	/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
